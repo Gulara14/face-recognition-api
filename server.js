@@ -11,8 +11,10 @@ const image = require('./controllers/image.js');
 const db = knex({
     client: 'pg',
     connection: {
-      coonectiongString: process.env.DATABASE_URL,
-      ssl: true
+      host : '127.0.0.1',
+      port : 5432,
+      user : 'face_recognition_database_user',
+      database : 'face_recognition_database'
     }
 });
 
