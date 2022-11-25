@@ -15,8 +15,8 @@ const db = knex({
       port : 5432,
       username : 'face_recognition_database_user',
       database : 'face_recognition_database',
-      password: 'KzHbKRS9jS5Ygr5UUfqC2eNMdUWcJIAA',
-      internal,database,URL: 'postgres://face_recognition_database_user:KzHbKRS9jS5Ygr5UUfqC2eNMdUWcJIAA@dpg-cdv1v3pgp3joutkjcf1g-a/face_recognition_database'
+      password: 'KzHbKRS9jS5Ygr5UUfqC2eNMdUWcJIAA'
+      //internal,database,URL: 'postgres://face_recognition_database_user:KzHbKRS9jS5Ygr5UUfqC2eNMdUWcJIAA@dpg-cdv1v3pgp3joutkjcf1g-a/face_recognition_database'
     }
 });
 
