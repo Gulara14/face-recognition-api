@@ -11,11 +11,11 @@ const image = require('./controllers/image.js');
 const db = knex({
     client: 'pg',
     connection: {
-    host : '127.0.0.1',
-    port : 5432,
+    host : 'containers-us-west-125.railway.app',
+    port : 7234,
     user : 'postgres',
-    password : '1414',
-    database : 'smart-brain'
+    password : '2hXJ2aVqJUrwr9a0jucx',
+    database : 'railway'
     }
 });
 
@@ -28,7 +28,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.get('/', (req, res)=> { res.send(database.users) })
+app.get('/', (req, res)=> { res.send("it is working") })
 app.post("/signin", signin.handleSignin(db, bcrypt))
 app.post("/register", (req, res) => { register.handleRegister(req, res, db, bcrypt) })
 app.get("/profile/:id", (req, res) => { profile.handleProfileGet(req, res, db) })
