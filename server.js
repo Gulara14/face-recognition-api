@@ -13,9 +13,9 @@ const db = knex({
     connection: {
     host : '127.0.0.1',
     port : 5432,
-    user : 'postgres',
-    password : '1414',
-    database : 'smart-brain'
+    username : 'face_recognition_database_i6px_user',
+    password : '2uyRpT53krQiBHAPkpAoDb1pYak9Y8BK',
+    database : 'face_recognition_database_i6px'
     }
 });
 
@@ -36,6 +36,6 @@ app.put("/image", (req, res) => { image.handleImage(req, res, db) })
 app.post("/imageurl", (req, res) => { image.handleApiCall(req, res) })
 
 
-app.listen(3000, () => {
-    console.log("app is running on port 3000");
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`app is running on port ${process.env.PORT}`);
 })
