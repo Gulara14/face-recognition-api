@@ -13,9 +13,9 @@ const db = knex({
     connection: {
     host : '127.0.0.1',
     port : 7234,
-    user : 'postgres',
-    password : '1414',
-    database : 'smart-brain'
+    user : 'face_recognition_database_i6px_user',
+    password : '2uyRpT53krQiBHAPkpAoDb1pYak9Y8BK',
+    database : 'face_recognition_database_i6px'
     }
 });
 
