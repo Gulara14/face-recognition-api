@@ -11,11 +11,11 @@ const image = require('./controllers/image.js');
 const db = knex({
     client: 'pg',
     connection: {
-    host : 'containers-us-west-125.railway.app',
-    port : 7234,
+    host : '127.0.0.1',
+    port : 5432,
     user : 'postgres',
-    password : '2hXJ2aVqJUrwr9a0jucx',
-    database : 'railway'
+    password : '1414',
+    database : 'smart-brain'
     }
 });
 
